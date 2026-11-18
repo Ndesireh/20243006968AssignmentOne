@@ -8,4 +8,10 @@
     <string name="topic_clicked">%1$s clicked</string>
     <string name="detail_placeholder_title">This is a title</string>
     <string name="detail_placeholder_content">This is content</string>
+    <string-array name="topic_labels">
+        <item>@string/facilities</item>
+        <item>@string/events</item>
+        <item>@string/clubs</item>
+        <item>@string/support</item>
+    </string-array>
 </resources>
