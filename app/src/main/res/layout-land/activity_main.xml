@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_main_banner" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/banner_overlay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/home_welcome"
+            android:textColor="@android:color/white"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/CampusTopicRow">
+
+            <LinearLayout style="@style/CampusTopicTile">
+                <ImageButton
+                    android:id="@+id/button_facilities"
+                    style="@style/CampusTopicButton"
+                    android:contentDescription="@string/facilities"
+                    android:src="@drawable/img_btn_facilities" />
+
+                <TextView
+                    style="@style/CampusTopicLabel"
+                    android:text="@string/facilities" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/CampusTopicTile">
+                <ImageButton
+                    android:id="@+id/button_events"
+                    style="@style/CampusTopicButton"
+                    android:contentDescription="@string/events"
+                    android:src="@drawable/img_btn_events" />
+
+                <TextView
+                    style="@style/CampusTopicLabel"
+                    android:text="@string/events" />
+            </LinearLayout>
+
+
+
+            <LinearLayout style="@style/CampusTopicTile">
+                <ImageButton
+                    android:id="@+id/button_clubs"
+                    style="@style/CampusTopicButton"
+                    android:contentDescription="@string/clubs"
+                    android:src="@drawable/img_btn_clubs" />
+
+                <TextView
+                    style="@style/CampusTopicLabel"
+                    android:text="@string/clubs" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/CampusTopicTile">
+                <ImageButton
+                    android:id="@+id/button_support"
+                    style="@style/CampusTopicButton"
+                    android:contentDescription="@string/support"
+                    android:src="@drawable/img_btn_support" />
+
+                <TextView
+                    style="@style/CampusTopicLabel"
+                    android:text="@string/support" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
