@@ -15,6 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_TOPIC_INDEX = "topic_index";
 
+    // These indices match the order of the topic arrays in res/values.
+    private static final int FACILITIES_INDEX = 0;
+    private static final int EVENTS_INDEX = 1;
+    private static final int CLUBS_INDEX = 2;
+    private static final int SUPPORT_INDEX = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onFacilitiesClick(View view) {
-        openTopic(0, R.string.facilities);
+        openTopic(FACILITIES_INDEX, R.string.facilities);
     }
 
     public void onEventsClick(View view) {
-        openTopic(1, R.string.events);
+        openTopic(EVENTS_INDEX, R.string.events);
     }
 
     public void onClubsClick(View view) {
-        openTopic(2, R.string.clubs);
+        openTopic(CLUBS_INDEX, R.string.clubs);
     }
 
     public void onSupportClick(View view) {
-        openTopic(3, R.string.support);
+        openTopic(SUPPORT_INDEX, R.string.support);
     }
 
     private void openTopic(int topicIndex, int labelResource) {
