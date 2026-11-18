@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="topic_background">#D3D3D3</color>
+    <color name="topic_text">#212121</color>
+    <color name="banner_overlay">#80000000</color>
+
+    <style name="CampusTopicRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CampusTopicTile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/topic_background</item>
+    </style>
+
+    <style name="CampusTopicButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/topic_background</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="CampusTopicLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/topic_text</item>
+    </style>
+
+</resources>
