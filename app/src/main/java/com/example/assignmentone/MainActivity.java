@@ -1,5 +1,6 @@
 package com.example.assignmentone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -11,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_TOPIC_INDEX = "topic_index";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,24 +32,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onFacilitiesClick(View view) {
-        showClickMessage(R.string.facilities);
+        openTopic(0, R.string.facilities);
     }
 
     public void onEventsClick(View view) {
-        showClickMessage(R.string.events);
+        openTopic(1, R.string.events);
     }
 
     public void onClubsClick(View view) {
-        showClickMessage(R.string.clubs);
+        openTopic(2, R.string.clubs);
     }
 
     public void onSupportClick(View view) {
-        showClickMessage(R.string.support);
+        openTopic(3, R.string.support);
     }
 
-    private void showClickMessage(int labelResource) {
+    private void openTopic(int topicIndex, int labelResource) {
         String label = getString(labelResource);
         String message = getString(R.string.topic_clicked, label);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, DetailActivity.class);
+        intent.putExtra(EXTRA_TOPIC_INDEX, topicIndex);
+        startActivity(intent);
     }
 }
