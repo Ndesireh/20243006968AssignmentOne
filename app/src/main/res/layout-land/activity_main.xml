@@ -45,6 +45,7 @@
                     android:id="@+id/button_facilities"
                     style="@style/CampusTopicButton"
                     android:contentDescription="@string/facilities"
+                    android:onClick="onFacilitiesClick"
                     android:src="@drawable/img_btn_facilities" />
 
                 <TextView
@@ -57,6 +58,7 @@
                     android:id="@+id/button_events"
                     style="@style/CampusTopicButton"
                     android:contentDescription="@string/events"
+                    android:onClick="onEventsClick"
                     android:src="@drawable/img_btn_events" />
 
                 <TextView
@@ -71,6 +73,7 @@
                     android:id="@+id/button_clubs"
                     style="@style/CampusTopicButton"
                     android:contentDescription="@string/clubs"
+                    android:onClick="onClubsClick"
                     android:src="@drawable/img_btn_clubs" />
 
                 <TextView
@@ -83,6 +86,7 @@
                     android:id="@+id/button_support"
                     style="@style/CampusTopicButton"
                     android:contentDescription="@string/support"
+                    android:onClick="onSupportClick"
                     android:src="@drawable/img_btn_support" />
 
                 <TextView
